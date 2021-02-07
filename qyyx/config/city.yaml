@@ -1,0 +1,13 @@
+test01:
+  -
+    url: http://apis.juhe.cn/simpleWeather/query
+    test_name: 正确的key和正确的city
+    key:  331eab8f3481f37868378fcdc76cb7cd
+    city:  上海
+    cake: 查询成功
+  -
+    url: http://apis.juhe.cn/simpleWeather/query
+    test_name: 正确的key和错误的city
+    key:  331eab8f3481f37868378fcdc76cb7cd
+    city:  未知地
+    cake: 暂不支持该城市

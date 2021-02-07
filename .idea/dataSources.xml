@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="全员营销-test" uuid="04ff50a7-9572-4027-a02e-169eec875149">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://10.255.23.2:30225/qyyxdbtest</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="全员营销-onlie" uuid="499237fb-dfd1-4158-a8e7-f7031d35328b">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://10.255.23.1:30136/qyyxdb</jdbc-url>
+    </data-source>
+  </component>
+</project>

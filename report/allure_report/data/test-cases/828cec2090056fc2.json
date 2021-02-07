@@ -1,0 +1,60 @@
+{
+  "uid" : "828cec2090056fc2",
+  "name" : "test_two",
+  "fullName" : "ApiTest.Testdemo2.TestDomo2#test_two",
+  "historyId" : "9bc21e572a84bb853b6ed2eae376cb3b",
+  "time" : {
+    "start" : 1610012689884,
+    "stop" : 1610012689884,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试demo2"
+  }, {
+    "name" : "story",
+    "value" : "测试用例2"
+  }, {
+    "name" : "parentSuite",
+    "value" : "ApiTest"
+  }, {
+    "name" : "suite",
+    "value" : "Testdemo2"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDomo2"
+  }, {
+    "name" : "host",
+    "value" : "BDGF-5CD0111GRL"
+  }, {
+    "name" : "thread",
+    "value" : "7864-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "ApiTest.Testdemo2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "828cec2090056fc2.json",
+  "parameterValues" : [ ]
+}

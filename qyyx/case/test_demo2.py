@@ -30,7 +30,7 @@ class testdemo2(unittest.TestCase):
 
 
 #     这是读取yaml的
-    @file_data(r'/Users/jiapeng/Downloads/pythonProject1/qyyx/config/testdata.yaml')
+    @file_data(r'/Users/jiapeng/Downloads/automationProject/qyyx/config/testdata.yaml')
     def testcase02(self,**testdata):
         casename = testdata.get('case')
         print(casename)

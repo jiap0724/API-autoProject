@@ -14,7 +14,7 @@ from ddt import file_data
 class testdemo(unittest.TestCase):
 
     @unittest.skip
-    @file_data(r'/Users/jiapeng/Downloads/pythonProject1/qyyx/config/testdata.yaml')
+    @file_data(r'/Users/jiapeng/Downloads/automationProject/qyyx/config/testdata.yaml')
     def test_demo1(self,**testdata):
         name=testdata.get('name')
         password=testdata.get('password')

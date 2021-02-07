@@ -98,3 +98,8 @@
 [2021-02-07 11:37:05] INFO [testcase02: test_demo2.py, 45] 这是测试用例2
 [2021-02-07 11:37:39] INFO [send_email: send_email.py, 47] 邮件发送完成！
 [2021-02-07 11:37:39] INFO [<module>: runall.py, 14] 测试结束
+[2021-02-07 11:57:17] INFO [<module>: runall.py, 6] 测试开始
+[2021-02-07 11:57:17] DEBUG [_new_conn: connectionpool.py, 227] Starting new HTTP connection (1): apis.juhe.cn:80
+[2021-02-07 11:57:17] DEBUG [_make_request: connectionpool.py, 452] http://apis.juhe.cn:80 "POST /simpleWeather/query HTTP/1.1" 200 None
+[2021-02-07 11:57:49] INFO [send_email: send_email.py, 47] 邮件发送完成！
+[2021-02-07 11:57:49] INFO [<module>: runall.py, 14] 测试结束

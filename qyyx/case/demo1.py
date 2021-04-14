@@ -42,7 +42,7 @@ class Login(unittest.TestCase):
         r = requests.get(url, cookies=cookies,verify=False)
         # print(json.dumps(r.json(), indent=2, ensure_ascii=False))
         # print(type(len(r.json()['body']['list'])))
-        a=int(len(r.json()['body']['list']))
+        a=len(r.json()['body']['list'])
 
         print(random.randint(-1,a))
 

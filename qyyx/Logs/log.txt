@@ -155,3 +155,56 @@
 [2021-02-07 18:52:54] INFO [testcase02: test_demo2.py, 45] 这是测试用例2
 [2021-02-07 18:53:25] INFO [send_email: send_email.py, 47] 邮件发送完成！
 [2021-02-07 18:53:25] INFO [<module>: runall.py, 14] 测试结束
+[2021-05-18 16:20:47] INFO [<module>: RunAll.py, 10] 测试开始
+[2021-05-18 16:34:02] INFO [<module>: runall.py, 6] 测试开始
+[2021-05-18 16:34:02] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): apis.juhe.cn:80
+[2021-05-18 16:34:03] DEBUG [_make_request: connectionpool.py, 433] http://apis.juhe.cn:80 "POST /simpleWeather/query HTTP/1.1" 200 None
+[2021-05-18 16:34:03] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): apis.juhe.cn:80
+[2021-05-18 16:34:03] DEBUG [_make_request: connectionpool.py, 433] http://apis.juhe.cn:80 "POST /simpleWeather/query HTTP/1.1" 200 None
+[2021-05-18 16:34:03] INFO [log_case_info: log_info.py, 12] 测试用例：正确的case
+[2021-05-18 16:34:03] INFO [log_case_info: log_info.py, 13] url：http://apis.juhe.cn/simpleWeather/query
+[2021-05-18 16:34:03] INFO [log_case_info: log_info.py, 14] 请求参数：{"key": "331eab8f3481f37868378fcdc76cb7cd", "city": "上海"}
+[2021-05-18 16:34:03] INFO [log_case_info: log_info.py, 16] 实际结果：{"reason":"查询成功!","result":{"city":"上海","realtime":{"temperature":"22","humidity":"57","info":"阴","wid":"02","direct":"东风","power":"2级","aqi":"32"},"future":[{"date":"2021-05-18","temperature":"17\/23℃","weather":"阴转小雨","wid":{"day":"02","night":"07"},"direct":"东北风转东南风"},{"date":"2021-05-19","temperature":"17\/22℃","weather":"小雨转中雨","wid":{"day":"07","night":"08"},"direct":"东南风转东风"},{"date":"2021-05-20","temperature":"18\/23℃","weather":"小雨转多云","wid":{"day":"07","night":"01"},"direct":"西北风转东南风"},{"date":"2021-05-21","temperature":"20\/26℃","weather":"多云","wid":{"day":"01","night":"01"},"direct":"东南风"},{"date":"2021-05-22","temperature":"18\/27℃","weather":"多云转晴","wid":{"day":"01","night":"00"},"direct":"东南风"}]},"error_code":0}
+[2021-05-18 16:34:03] INFO [testcase02: test_demo2.py, 45] 这是测试用例2
+[2021-05-18 16:34:03] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): apis.juhe.cn:80
+[2021-05-18 16:34:03] DEBUG [_make_request: connectionpool.py, 433] http://apis.juhe.cn:80 "POST /simpleWeather/query HTTP/1.1" 200 None
+[2021-05-18 16:34:03] INFO [log_case_info: log_info.py, 12] 测试用例：错误的城市
+[2021-05-18 16:34:03] INFO [log_case_info: log_info.py, 13] url：http://apis.juhe.cn/simpleWeather/query
+[2021-05-18 16:34:03] INFO [log_case_info: log_info.py, 14] 请求参数：{"key": "331eab8f3481f37868378fcdc76cb7cd", "city": "未知地"}
+[2021-05-18 16:34:03] INFO [log_case_info: log_info.py, 16] 实际结果：{"reason":"暂不支持该城市","result":null,"error_code":207301}
+[2021-05-18 16:34:03] INFO [testcase02: test_demo2.py, 45] 这是测试用例2
+[2021-05-18 16:34:03] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): apis.juhe.cn:80
+[2021-05-18 16:34:03] DEBUG [_make_request: connectionpool.py, 433] http://apis.juhe.cn:80 "POST /simpleWeather/query HTTP/1.1" 200 None
+[2021-05-18 16:34:03] INFO [log_case_info: log_info.py, 12] 测试用例：错误的key
+[2021-05-18 16:34:03] INFO [log_case_info: log_info.py, 13] url：http://apis.juhe.cn/simpleWeather/query
+[2021-05-18 16:34:03] INFO [log_case_info: log_info.py, 14] 请求参数：{"key": "331eab8f3481f37868378fcdc76cb7", "city": "北京"}
+[2021-05-18 16:34:03] INFO [log_case_info: log_info.py, 16] 实际结果：{"resultcode":"101","reason":"错误的请求KEY","result":null,"error_code":10001}
+[2021-05-18 16:34:03] INFO [testcase02: test_demo2.py, 45] 这是测试用例2
+[2021-05-18 16:34:36] INFO [send_email: send_email.py, 47] 邮件发送完成！
+[2021-05-18 16:34:36] INFO [<module>: runall.py, 14] 测试结束
+[2021-05-19 11:12:40] INFO [<module>: runall.py, 6] 测试开始
+[2021-05-19 11:12:40] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): apis.juhe.cn:80
+[2021-05-19 11:12:40] DEBUG [_make_request: connectionpool.py, 433] http://apis.juhe.cn:80 "POST /simpleWeather/query HTTP/1.1" 200 None
+[2021-05-19 11:12:40] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): apis.juhe.cn:80
+[2021-05-19 11:12:40] DEBUG [_make_request: connectionpool.py, 433] http://apis.juhe.cn:80 "POST /simpleWeather/query HTTP/1.1" 200 None
+[2021-05-19 11:12:40] INFO [log_case_info: log_info.py, 12] 测试用例：正确的case
+[2021-05-19 11:12:40] INFO [log_case_info: log_info.py, 13] url：http://apis.juhe.cn/simpleWeather/query
+[2021-05-19 11:12:40] INFO [log_case_info: log_info.py, 14] 请求参数：{"key": "331eab8f3481f37868378fcdc76cb7cd", "city": "上海"}
+[2021-05-19 11:12:40] INFO [log_case_info: log_info.py, 16] 实际结果：{"reason":"查询成功!","result":{"city":"上海","realtime":{"temperature":"21","humidity":"70","info":"阴","wid":"02","direct":"东北风","power":"3级","aqi":"30"},"future":[{"date":"2021-05-19","temperature":"18\/23℃","weather":"小雨","wid":{"day":"07","night":"07"},"direct":"东南风转东风"},{"date":"2021-05-20","temperature":"20\/25℃","weather":"阴","wid":{"day":"02","night":"02"},"direct":"西北风转东南风"},{"date":"2021-05-21","temperature":"20\/27℃","weather":"阴转多云","wid":{"day":"02","night":"01"},"direct":"东南风"},{"date":"2021-05-22","temperature":"19\/26℃","weather":"多云转晴","wid":{"day":"01","night":"00"},"direct":"东南风"},{"date":"2021-05-23","temperature":"18\/23℃","weather":"小雨","wid":{"day":"07","night":"07"},"direct":"东南风转北风"}]},"error_code":0}
+[2021-05-19 11:12:40] INFO [testcase02: test_demo2.py, 45] 这是测试用例2
+[2021-05-19 11:12:40] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): apis.juhe.cn:80
+[2021-05-19 11:12:41] DEBUG [_make_request: connectionpool.py, 433] http://apis.juhe.cn:80 "POST /simpleWeather/query HTTP/1.1" 200 None
+[2021-05-19 11:12:41] INFO [log_case_info: log_info.py, 12] 测试用例：错误的城市
+[2021-05-19 11:12:41] INFO [log_case_info: log_info.py, 13] url：http://apis.juhe.cn/simpleWeather/query
+[2021-05-19 11:12:41] INFO [log_case_info: log_info.py, 14] 请求参数：{"key": "331eab8f3481f37868378fcdc76cb7cd", "city": "未知地"}
+[2021-05-19 11:12:41] INFO [log_case_info: log_info.py, 16] 实际结果：{"reason":"暂不支持该城市","result":null,"error_code":207301}
+[2021-05-19 11:12:41] INFO [testcase02: test_demo2.py, 45] 这是测试用例2
+[2021-05-19 11:12:41] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): apis.juhe.cn:80
+[2021-05-19 11:12:41] DEBUG [_make_request: connectionpool.py, 433] http://apis.juhe.cn:80 "POST /simpleWeather/query HTTP/1.1" 200 None
+[2021-05-19 11:12:41] INFO [log_case_info: log_info.py, 12] 测试用例：错误的key
+[2021-05-19 11:12:41] INFO [log_case_info: log_info.py, 13] url：http://apis.juhe.cn/simpleWeather/query
+[2021-05-19 11:12:41] INFO [log_case_info: log_info.py, 14] 请求参数：{"key": "331eab8f3481f37868378fcdc76cb7", "city": "北京"}
+[2021-05-19 11:12:41] INFO [log_case_info: log_info.py, 16] 实际结果：{"resultcode":"101","reason":"错误的请求KEY","result":null,"error_code":10001}
+[2021-05-19 11:12:41] INFO [testcase02: test_demo2.py, 45] 这是测试用例2
+[2021-05-19 11:13:13] INFO [send_email: send_email.py, 47] 邮件发送完成！
+[2021-05-19 11:13:13] INFO [<module>: runall.py, 14] 测试结束

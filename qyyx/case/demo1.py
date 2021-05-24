@@ -36,6 +36,7 @@ class Login(unittest.TestCase):
         # print(cookies)
         globals()['cookies']=r.cookies
 
+    @unittest.skip
     #校区列表
     def test_xiaoqu(self):
         url = "http://oms.admin.aixuexi.com/marketingcenter/marketingactivity/institutions?pageNum=1&pageSize=10"

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="全员营销-test" uuid="04ff50a7-9572-4027-a02e-169eec875149">
+    <data-source source="LOCAL" name="蜂巢数据库" uuid="d04da9c9-c60a-48eb-be97-460e7b9ec70b">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
+      <remarks>axx-testbasedata</remarks>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://10.255.23.2:30225/qyyxdbtest</jdbc-url>
+      <jdbc-url>jdbc:mysql://rm-2zeyoxjy4n606sm1l4o.mysql.rds.aliyuncs.com:3306/marketing_center</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="全员营销-onlie" uuid="499237fb-dfd1-4158-a8e7-f7031d35328b">
+    <data-source source="LOCAL" name="test@localhost" uuid="d06adebc-a4c0-4025-a702-cd03fd53aaf8">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://10.255.23.1:30136/qyyxdb</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/test</jdbc-url>
     </data-source>
   </component>
 </project>

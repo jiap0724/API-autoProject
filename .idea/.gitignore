@@ -4,5 +4,6 @@
 # Datasource local storage ignored files
 /../../../../../../:\Users\GW00216719\PycharmProjects\pythonProject1\.idea/dataSources/
 /dataSources.local.xml
+/dataSources/
 # Editor-based HTTP Client requests
 /httpRequests/

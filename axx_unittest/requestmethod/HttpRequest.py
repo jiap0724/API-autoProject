@@ -2,23 +2,13 @@
 # @Time : 2021/5/23 19:07
 # @Author : jiapeng
 # @File : HttpRequest.py
+'''
+请求方法封装
+'''
 import json
-
 import requests
 
 class HttpRequest:
-# #     post
-#     def postmethod(self,url,data=None,headers=None):
-#
-#         r= requests.post(url=url,data=data,headers=headers)
-#         return json.dumps(r.json(), indent=2, ensure_ascii=False)
-#
-#
-# #     get
-#     def getmethod(self,url,params=None,headers=None):
-#
-#         r= requests.get(url=url,params=params,headers=headers)
-#         return json.dumps(r.json(), indent=2, ensure_ascii=False)
 
     def http_request(self, url, data, http_method, cookie,header):
         try:
@@ -31,7 +21,9 @@ class HttpRequest:
                 print("请求方法错误 不是get、post请求方法 ！")
         except Exception as e:
             print("请求出错了：{0}".format(e))
-        return json.dumps(res.json(),ensure_ascii=False,indent=2,sort_keys=True)
+
+        return res.json()
+        # return json.dumps(res.json(),ensure_ascii=False,indent=2,sort_keys=True)
 
 
 

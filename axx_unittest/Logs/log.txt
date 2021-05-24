@@ -80,3 +80,33 @@
 [2021-05-19 15:03:47] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
 [2021-05-19 15:04:18] INFO [send_email: send_email.py, 47] 邮件发送完成！
 [2021-05-19 15:04:18] INFO [<module>: runall.py, 12] 测试结束
+[2021-05-24 15:46:25] INFO [<module>: runall.py, 6] 测试开始
+[2021-05-24 15:46:25] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-05-24 15:46:26] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-05-24 15:46:26] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-05-24 15:46:26] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-05-24 15:46:26] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-05-24 15:46:26] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-05-24 15:46:26] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-05-24 15:46:26] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-05-24 15:46:26] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-05-24 15:46:26] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-05-24 15:46:26] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-05-24 15:46:27] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-05-24 15:46:58] INFO [send_email: send_email.py, 47] 邮件发送完成！
+[2021-05-24 15:46:58] INFO [<module>: runall.py, 12] 测试结束
+[2021-05-24 15:49:15] INFO [<module>: runall.py, 6] 测试开始
+[2021-05-24 15:49:15] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-05-24 15:49:15] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-05-24 15:49:15] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-05-24 15:49:16] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-05-24 15:49:16] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-05-24 15:49:16] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-05-24 15:49:16] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-05-24 15:49:16] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-05-24 15:49:16] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-05-24 15:49:16] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-05-24 15:49:16] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-05-24 15:49:16] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-05-24 15:49:48] INFO [send_email: send_email.py, 47] 邮件发送完成！
+[2021-05-24 15:49:48] INFO [<module>: runall.py, 12] 测试结束

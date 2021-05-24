@@ -36,22 +36,22 @@ class Login(unittest.TestCase):
         # print(cookies)
         globals()['cookies']=r.cookies
 
-    @unittest.skip
+
     #校区列表
     def test_xiaoqu(self):
         url = "http://oms.admin.aixuexi.com/marketingcenter/marketingactivity/institutions?pageNum=1&pageSize=10"
         r = requests.get(url, cookies=cookies,verify=False)
-        # print(json.dumps(r.json(), indent=2, ensure_ascii=False))
-        # print(type(len(r.json()['body']['list'])))
-        a=len(r.json()['body']['list'])
-
-        print(random.randint(-1,a))
-
-        num=random.randint(-1,a)
-        print(r.json()['body']['list'][num]['institutionId'])
-        print(r.json()['body']['list'][num]['institutionName'])
-        print(r.json()['body']['list'][num]['campusId'])
-        print(r.json()['body']['list'][num]['campusName'])
+        print(json.dumps(r.json(), indent=2, ensure_ascii=False))
+        print(type(len(r.json()['body']['list'])))
+        # a=len(r.json()['body']['list'])
+        #
+        # print(random.randint(-1,a))
+        #
+        # num=random.randint(-1,a)
+        # print(r.json()['body']['list'][num]['institutionId'])
+        # print(r.json()['body']['list'][num]['institutionName'])
+        # print(r.json()['body']['list'][num]['campusId'])
+        # print(r.json()['body']['list'][num]['campusName'])
 
 
 if __name__ == '__main__':

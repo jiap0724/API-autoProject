@@ -20,7 +20,8 @@ class axx_learn(unittest.TestCase):
         }
         r = requests.post(url=self.host, data=data)
         # print(r.cookies)
-        print(json.dumps(r.json(), indent=2, ensure_ascii=False))
+        # print(json.dumps(r.json(), indent=2, ensure_ascii=False))
+        print(r.text)
 
     def test_login1(self):
         data = {

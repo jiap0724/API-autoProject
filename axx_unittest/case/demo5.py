@@ -1,18 +1,16 @@
 # -*- coding:utf-8 -*-
-# @Time : 2021/5/18 15:41
+# @Time : 2021/5/24 10:34
 # @Author : jiapeng
-# @File : test_demo5.py
+# @File : demo5.py
+
 import unittest
-import requests
-import json
 import ddt #数据驱动
 from ddt import unpack,data,file_data
-
-from axx_unittest.HTMLTestReportCN import HTMLTestRunner
-
+from axx_unittest.requestmethod.HttpRequest import HttpRequest
 
 @ddt.ddt()
 class axx_learn(unittest.TestCase):
+
     def setUp(self) -> None:
         self.host='https://admin.aixuexi.com/shooter/manage/passwordLogin'
         print('初始化')
@@ -23,30 +21,27 @@ class axx_learn(unittest.TestCase):
     # 多个元素还需要使用unpack
     @data(['jiapeng0@aixuexi.com','Jiapeng0724'],['jiapeng0@aixuexi.com','Jiapeng0724'],['jiapeng0@aixuexi.com','Jiapeng0724'])
     @unpack
-    def test_login(self,username,password):
+    def test_login001(self,username,password):
         data = {
             'username': username,
             'password': password
         }
-        r = requests.post(url=self.host, data=data)
-        # print(r.cookies)
-        print(json.dumps(r.json(), indent=2, ensure_ascii=False))
+
+        res=HttpRequest().http_request(self.host,data,'post',None,None)
+        print(res)
+
 
     # 读取yaml
     @file_data(r'/Users/jiapeng/Downloads/automationProject/axx_unittest/TestData/testdata.yaml')
-    def test_login1(self,**testdata):
+    def test_login002(self,**testdata):
         casename = testdata.get('case')
         print(casename)
-
         data = {
             'username': testdata.get('username'),
             'password': testdata.get('password')
         }
-
-        r = requests.post(url=self.host, data=data)
-        # print(r.cookies)
-        print(json.dumps(r.json(), indent=2, ensure_ascii=False))
+        res=HttpRequest().http_request(self.host,data,'post',None,None)
+        print(res)
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
-

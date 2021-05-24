@@ -1,0 +1,21 @@
+-
+    data:
+        username:   jiapeng0@aixuexi.com
+        password:  Jiapeng0724
+    case: 正确的case
+    msg: ''
+-
+    data:
+        username:  jiapeng
+        password:  Jiapeng0724
+    case: 用户名错误
+    msg: oa邮箱或密码错误，请填写正确的邮箱及密码
+-
+    data:
+        username:  jiapeng0@aixuexi.com
+        password:  jiapeng
+    case: 密码错误
+    msg: oa邮箱或密码错误，请填写正确的邮箱及密码
+
+
+

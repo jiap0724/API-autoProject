@@ -13,9 +13,10 @@ import requests
 class axx_learn(unittest.TestCase):
 
     @classmethod
+    #初始化类方法
     def setUpClass(cls) -> None:
         cls.cookie=None
-
+    # 登陆接口获取cookie
     def test_login(self):
         url='https://admin.aixuexi.com/shooter/manage/passwordLogin'
         data={
@@ -40,7 +41,7 @@ class axx_learn(unittest.TestCase):
         print(r.text)
         key=input('请输入要获取的key:')
         value=jsonpath.jsonpath(r.json(),'$..{0}'.format(key)) #$表示最外层的{}，..表示模糊匹配
-        print(value)
+        # print(value)
         print(','.join('%s' %id for id in value))  #列表转换成string
         print(','.join(value))
 

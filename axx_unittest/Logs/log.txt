@@ -209,3 +209,123 @@
 [2021-05-24 16:12:44] INFO [log_case_info: log_info.py, 16] 实际结果：{'status': 0, 'errorCode': 0, 'errorMessage': 'oa邮箱或密码错误，请填写正确的邮箱及密码', 'body': {}}
 [2021-05-24 16:13:15] INFO [send_email: send_email.py, 47] 邮件发送完成！
 [2021-05-24 16:13:15] INFO [<module>: runall.py, 12] 测试结束
+[2021-06-03 17:06:26] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-03 17:06:26] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-03 17:06:27] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-03 17:06:27] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-03 17:06:27] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-03 17:06:27] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-03 17:12:05] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-03 17:12:05] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-03 17:12:05] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-03 17:12:05] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-03 17:12:05] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-03 17:12:05] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-03 17:12:26] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:12:26] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:12:26] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:12:26] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:12:26] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:12:26] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:12:26] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:12:26] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:12:26] INFO [test_login002: demo5.py, 49] ========测试日志信息=========
+[2021-06-03 17:12:26] INFO [log_case_info: log_info.py, 12] 测试用例：正确的case
+[2021-06-03 17:12:26] INFO [log_case_info: log_info.py, 13] url：http://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-06-03 17:12:26] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng0@aixuexi.com", "password": "Jiapeng0724"}
+[2021-06-03 17:12:26] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-06-03 17:12:26] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:12:26] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:12:26] INFO [test_login002: demo5.py, 49] ========测试日志信息=========
+[2021-06-03 17:12:26] INFO [log_case_info: log_info.py, 12] 测试用例：用户名错误
+[2021-06-03 17:12:26] INFO [log_case_info: log_info.py, 13] url：http://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-06-03 17:12:26] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng", "password": "Jiapeng0724"}
+[2021-06-03 17:12:26] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-06-03 17:12:26] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:12:26] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:12:26] INFO [test_login002: demo5.py, 49] ========测试日志信息=========
+[2021-06-03 17:12:26] INFO [log_case_info: log_info.py, 12] 测试用例：密码错误
+[2021-06-03 17:12:26] INFO [log_case_info: log_info.py, 13] url：http://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-06-03 17:12:26] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng0@aixuexi.com", "password": "jiapeng"}
+[2021-06-03 17:12:26] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-06-03 17:13:00] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:13:00] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:13:00] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:13:00] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:13:00] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:13:00] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:13:00] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:13:00] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:13:00] INFO [test_login002: demo5.py, 49] ========测试日志信息=========
+[2021-06-03 17:13:00] INFO [log_case_info: log_info.py, 12] 测试用例：正确的case
+[2021-06-03 17:13:00] INFO [log_case_info: log_info.py, 13] url：http://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-06-03 17:13:00] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng0@aixuexi.com", "password": "Jiapeng0724"}
+[2021-06-03 17:13:00] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-06-03 17:13:00] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:13:00] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:13:00] INFO [test_login002: demo5.py, 49] ========测试日志信息=========
+[2021-06-03 17:13:00] INFO [log_case_info: log_info.py, 12] 测试用例：用户名错误
+[2021-06-03 17:13:00] INFO [log_case_info: log_info.py, 13] url：http://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-06-03 17:13:00] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng", "password": "Jiapeng0724"}
+[2021-06-03 17:13:00] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-06-03 17:13:00] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:13:00] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:13:00] INFO [test_login002: demo5.py, 49] ========测试日志信息=========
+[2021-06-03 17:13:00] INFO [log_case_info: log_info.py, 12] 测试用例：密码错误
+[2021-06-03 17:13:00] INFO [log_case_info: log_info.py, 13] url：http://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-06-03 17:13:00] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng0@aixuexi.com", "password": "jiapeng"}
+[2021-06-03 17:13:00] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-06-03 17:19:36] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:19:36] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:19:36] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:19:36] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:19:36] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:19:37] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:19:37] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:19:37] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:19:37] INFO [test_login002: demo5.py, 49] ========测试日志信息=========
+[2021-06-03 17:19:37] INFO [log_case_info: log_info.py, 12] 测试用例：正确的case
+[2021-06-03 17:19:37] INFO [log_case_info: log_info.py, 13] url：http://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-06-03 17:19:37] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng0@aixuexi.com", "password": "Jiapeng0724"}
+[2021-06-03 17:19:37] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-06-03 17:19:37] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:19:37] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:19:37] INFO [test_login002: demo5.py, 49] ========测试日志信息=========
+[2021-06-03 17:19:37] INFO [log_case_info: log_info.py, 12] 测试用例：用户名错误
+[2021-06-03 17:19:37] INFO [log_case_info: log_info.py, 13] url：http://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-06-03 17:19:37] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng", "password": "Jiapeng0724"}
+[2021-06-03 17:19:37] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-06-03 17:19:37] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:19:37] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:19:37] INFO [test_login002: demo5.py, 49] ========测试日志信息=========
+[2021-06-03 17:19:37] INFO [log_case_info: log_info.py, 12] 测试用例：密码错误
+[2021-06-03 17:19:37] INFO [log_case_info: log_info.py, 13] url：http://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-06-03 17:19:37] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng0@aixuexi.com", "password": "jiapeng"}
+[2021-06-03 17:19:37] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-06-03 17:22:01] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:22:01] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:22:01] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:22:01] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:22:01] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:22:01] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:22:01] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:22:01] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:22:01] INFO [test_login002: demo5.py, 49] ========测试日志信息=========
+[2021-06-03 17:22:01] INFO [log_case_info: log_info.py, 12] 测试用例：正确的case
+[2021-06-03 17:22:01] INFO [log_case_info: log_info.py, 13] url：http://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-06-03 17:22:01] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng0@aixuexi.com", "password": "Jiapeng0724"}
+[2021-06-03 17:22:01] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-06-03 17:22:01] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:22:01] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:22:01] INFO [test_login002: demo5.py, 49] ========测试日志信息=========
+[2021-06-03 17:22:01] INFO [log_case_info: log_info.py, 12] 测试用例：用户名错误
+[2021-06-03 17:22:01] INFO [log_case_info: log_info.py, 13] url：http://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-06-03 17:22:01] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng", "password": "Jiapeng0724"}
+[2021-06-03 17:22:01] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-06-03 17:22:01] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-03 17:22:01] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://admin.aixuexi.com/shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-06-03 17:22:01] INFO [test_login002: demo5.py, 49] ========测试日志信息=========
+[2021-06-03 17:22:01] INFO [log_case_info: log_info.py, 12] 测试用例：密码错误
+[2021-06-03 17:22:01] INFO [log_case_info: log_info.py, 13] url：http://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-06-03 17:22:01] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng0@aixuexi.com", "password": "jiapeng"}
+[2021-06-03 17:22:01] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>

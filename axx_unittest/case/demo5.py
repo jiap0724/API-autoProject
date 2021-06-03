@@ -11,11 +11,12 @@ from axx_unittest.Logs.log_info import log_case_info
 from axx_unittest.Logs.demolog import *
 from axx_unittest.requestmethod.HttpRequest import HttpRequest
 
+
 @ddt.ddt()
 class axx_learn(unittest.TestCase):
 
     def setUp(self) -> None:
-        self.host='https://admin.aixuexi.com/shooter/manage/passwordLogin'
+        self.host='http://admin.aixuexi.com/shooter/manage/passwordLogin'
         print('初始化')
 
     def tearDown(self) -> None:
@@ -30,8 +31,8 @@ class axx_learn(unittest.TestCase):
             'password': password
         }
 
-        res=HttpRequest().http_request(self.host,data,'post',None,None)
-        print(res)
+        res=HttpRequest().http_post_data(self.host,None,data)
+        print(res.text)
 
 
     # 读取yaml
@@ -43,8 +44,8 @@ class axx_learn(unittest.TestCase):
             'username': testdata.get('username'),
             'password': testdata.get('password')
         }
-        res=HttpRequest().http_request(self.host,data,'post',None,None)
-        print(res)
+        res=HttpRequest().http_post_data(self.host,None,data)
+        print(res.text)
         logging.info('========测试日志信息=========')
         log_case_info(casename, self.host, data, res)
 

@@ -6,24 +6,40 @@
 请求方法封装
 '''
 import json
+
+import jsonpath
 import requests
 
 class HttpRequest:
+    # get请求方法
+    def http_get(self, url,header,param):
+        return requests.get(url=url,headers=header,params=param)
 
-    def http_request(self, url, data, http_method, cookie,header):
-        try:
+    # post请求方法
+    def http_post(self,url,header,data):
+        return requests.post(url=url,headers=header,json=data)
 
-            if http_method.upper() == 'GET':
-                res = requests.get(url,  cookies=cookie,headers=header,verify=False)  #使用verify=False 解决 HTTPSConnectionPool(host='***', port=443)
-            elif http_method.upper() == 'POST':
-                res = requests.post(url, data, cookies=cookie,headers=header,verify=False)
-            else:
-                print("请求方法错误 不是get、post请求方法 ！")
-        except Exception as e:
-            print("请求出错了：{0}".format(e))
+    # post请求方法
+    def http_post_data(self,url,header,data):
+        return requests.post(url=url,headers=header,data=data)
 
-        return res.json()
-        # return json.dumps(res.json(),ensure_ascii=False,indent=2,sort_keys=True)
+#    获取参数值
+    def get_msg(self,r,key):
+        if r is not None:
+            try:
+                msg=json.loads(r)
+                value=jsonpath.jsonpath(msg,'$..{0}'.format(key))
+                if value:
+                    if len(value)==1:
+                        return value[0]
+                return value
+
+            except Exception as e:
+                return e
+        else:
+            return None
+
+
 
 
 

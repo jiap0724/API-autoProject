@@ -8,11 +8,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://rm-2zeyoxjy4n606sm1l4o.mysql.rds.aliyuncs.com:3306/marketing_center</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="test@localhost" uuid="d06adebc-a4c0-4025-a702-cd03fd53aaf8">
+    <data-source source="LOCAL" name="test@127.0.0.1" uuid="d06adebc-a4c0-4025-a702-cd03fd53aaf8">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/test</jdbc-url>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/test</jdbc-url>
     </data-source>
   </component>
 </project>

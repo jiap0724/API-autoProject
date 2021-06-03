@@ -10,7 +10,7 @@ import json
 import random
 
 from axx_unittest.requestmethod.HttpRequest import HttpRequest
-
+from axx_unittest.config import getHost
 
 class axx_learn(unittest.TestCase):
 
@@ -19,9 +19,12 @@ class axx_learn(unittest.TestCase):
         cls.ptpc=None
         cls.ptpcUserId=None
         cls.orderId=None
+    #     优化后
+        cls.host=getHost.GetHost('../config/host.ini','aixuexi','host')
+        cls.ghost = getHost.GetHost('../config/host.ini', 'ghostrider', 'host')
 
     def test_01_login(self):
-        url='http://www.aixuexi.com/surrogates/passport/user/v2/login'
+        url=self.host+'/surrogates/passport/user/v2/login'
         data={
             "device": "6619a89f4edf3cf778b5bf335a02458f",
             "loginType": 1,
@@ -45,7 +48,7 @@ class axx_learn(unittest.TestCase):
             'userid':self.ptpcUserId,
             'ptpc':self.ptpc
         }
-        url='http://ghostrider.aixuexi.com/pop/order/pay-list?studentName=&orderNo=&phone=&goodsName=&orderStatus=&businessType=1&orderSource=&orderAccount=&pageNum=1&pageSize=10&startTime=2021-05-03%2000:00:00&endTime=2021-06-02%2023:59:59'
+        url=self.ghost+'/pop/order/pay-list?studentName=&orderNo=&phone=&goodsName=&orderStatus=&businessType=1&orderSource=&orderAccount=&pageNum=1&pageSize=10&startTime=2021-05-03%2000:00:00&endTime=2021-06-02%2023:59:59'
         r=HttpRequest().http_get(url,header,None)
         # print(json.dumps(r.json(),indent=2,ensure_ascii=False))
         # key = input('请输入要获取的key:')
@@ -62,7 +65,7 @@ class axx_learn(unittest.TestCase):
         }
         orderId=random.choice(self.orderId)
         print(orderId)
-        url='http://ghostrider.aixuexi.com/pop/order/NCTS/pay-order-detail?orderId='+str(orderId)
+        url=self.ghost+'/pop/order/NCTS/pay-order-detail?orderId='+str(orderId)
         r=HttpRequest().http_get(url,header,None)
         # print(r.json())
         print(json.dumps(r.json(), indent=2, ensure_ascii=False))

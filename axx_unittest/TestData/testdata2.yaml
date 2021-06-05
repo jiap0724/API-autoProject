@@ -1,0 +1,16 @@
+-
+    case: 接口关联
+    path: /surrogates/passport/user/v2/login
+    headers:
+        ptpc:
+        userid:
+    data:
+        device: 6619a89f4edf3cf778b5bf335a02458f
+        loginType: 1
+        password: qa123456
+        username: 15210060668
+        validateCode:
+        loginSystem: pc
+    url: http://www.aixuexi.com/surrogates/passport/user/v2/login
+    orderlistpath: /pop/order/pay-list?studentName=&orderNo=&phone=&goodsName=&orderStatus=&businessType=1&orderSource=&orderAccount=&pageNum=1&pageSize=10&startTime=2021-05-03%2000:00:00&endTime=2021-06-02%2023:59:59
+    orderdetailpath:

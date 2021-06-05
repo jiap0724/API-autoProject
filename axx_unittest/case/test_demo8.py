@@ -24,7 +24,7 @@ class axx_learn(unittest.TestCase):
         cls.ptpcUserId=None
         cls.orderId=None
     #     优化后
-        cls.host=getHost.GetHost('/Users/jiapeng/Downloads/automationProject/axx_unittest/config/host.ini','aixuexi','host')
+        cls.host=getHost.GetHost('../config/host.ini','aixuexi','host')
         cls.ghost = getHost.GetHost('/Users/jiapeng/Downloads/automationProject/axx_unittest/config/host.ini', 'ghostrider', 'host')
     # 数据驱动 读取yaml
     @file_data(r'/Users/jiapeng/Downloads/automationProject/axx_unittest/TestData/testdata2.yaml')

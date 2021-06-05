@@ -866,3 +866,7 @@
 [2021-06-05 20:06:51] DEBUG [_make_request: connectionpool.py, 433] http://ghostrider.aixuexi.com:80 "GET /pop/order/NCTS/pay-order-detail?orderId=7500 HTTP/1.1" 200 None
 [2021-06-05 20:06:53] INFO [send_email: send_email.py, 47] 邮件发送完成！
 [2021-06-05 20:06:53] INFO [<module>: runall.py, 12] 测试结束
+[2021-06-05 20:16:34] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-06-05 20:16:34] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-05 20:16:34] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): ghostrider.aixuexi.com:80
+[2021-06-05 20:16:34] DEBUG [_make_request: connectionpool.py, 433] http://ghostrider.aixuexi.com:80 "GET /pop/order/pay-list?studentName=&orderNo=&phone=&goodsName=&orderStatus=&businessType=1&orderSource=&orderAccount=&pageNum=1&pageSize=10&startTime=2021-05-03%2000:00:00&endTime=2021-06-02%2023:59:59 HTTP/1.1" 200 99

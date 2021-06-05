@@ -24,7 +24,7 @@ class axx_learn(unittest.TestCase):
         cls.ptpcUserId=None
         cls.orderId=None
     #     优化后
-        cls.host=getHost.GetHost('../config/host.ini','aixuexi','host')
+        cls.host=getHost.GetHost('/Users/jiapeng/Downloads/automationProject/axx_unittest/config/host.ini','aixuexi','host')
         cls.ghost = getHost.GetHost('/Users/jiapeng/Downloads/automationProject/axx_unittest/config/host.ini', 'ghostrider', 'host')
     # 数据驱动 读取yaml
     @file_data(r'/Users/jiapeng/Downloads/automationProject/axx_unittest/TestData/testdata2.yaml')
@@ -34,8 +34,8 @@ class axx_learn(unittest.TestCase):
         data=testdata['data']
         r=HttpRequest().http_post(url,None,data)
         cookies = requests.utils.dict_from_cookiejar(r.cookies)
-        axx_learn1.ptpc=cookies['ptpc']
-        axx_learn1.ptpcUserId=cookies['ptpcUserId']
+        axx_learn.ptpc=cookies['ptpc']
+        axx_learn.ptpcUserId=cookies['ptpcUserId']
         self.assertEqual(r.json()['body']['userId'],2720372,msg='登陆失败')
         logging.info('========测试日志信息=========')
         log_case_info(case, url, data, r)
@@ -51,9 +51,9 @@ class axx_learn(unittest.TestCase):
         r=HttpRequest().http_get(url,header,None)
         # print(json.dumps(r.json(),indent=2,ensure_ascii=False))
         # key = input('请输入要获取的key:')
-        axx_learn1.orderId=jsonpath.jsonpath(r.json(),'$..{0}'.format('orderId'))
-        print(axx_learn1.orderId)
-        self.assertIsNotNone(axx_learn1.orderId,msg='orderid为空')
+        axx_learn.orderId=jsonpath.jsonpath(r.json(),'$..{0}'.format('orderId'))
+        print(axx_learn.orderId)
+        self.assertIsNotNone(axx_learn.orderId,msg='orderid为空')
 
 #     订单详情
 

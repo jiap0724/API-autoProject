@@ -1241,3 +1241,40 @@
 [2021-06-22 18:29:38] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://px.aixuexi.com/thewolverine/aiCourse/saveUserInterestLabel HTTP/1.1" 200 None
 [2021-06-22 18:29:38] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
 [2021-06-22 18:29:38] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "GET http://px.aixuexi.com/thewolverine/course/getPersonalCourseList HTTP/1.1" 200 None
+[2021-06-22 18:42:10] INFO [<module>: runall.py, 6] 测试开始
+[2021-06-22 18:42:10] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-22 18:42:11] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-22 18:42:11] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-22 18:42:11] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-22 18:42:11] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-22 18:42:11] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-06-22 18:42:11] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-22 18:42:11] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://www.aixuexi.com/surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-22 18:42:11] INFO [test_01_login: test_demo8.py, 40] ========测试日志信息=========
+[2021-06-22 18:42:11] INFO [log_case_info: log_info.py, 12] 测试用例：接口关联
+[2021-06-22 18:42:11] INFO [log_case_info: log_info.py, 13] url：http://www.aixuexi.com/surrogates/passport/user/v2/login
+[2021-06-22 18:42:11] INFO [log_case_info: log_info.py, 14] 请求参数：{"device": "dffb64a4b76134eae61aab58c541bd33", "loginType": 1, "password": "qa123456", "username": 15210060668, "validateCode": null, "loginSystem": "pc"}
+[2021-06-22 18:42:11] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-06-22 18:42:11] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-22 18:42:12] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "GET http://ghostrider.aixuexi.com/pop/order/pay-list?studentName=&orderNo=&phone=&goodsName=&orderStatus=&businessType=1&orderSource=&orderAccount=&pageNum=1&pageSize=10&startTime=2021-05-03%2000:00:00&endTime=2021-06-02%2023:59:59 HTTP/1.1" 200 None
+[2021-06-22 18:42:12] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-22 18:42:13] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "GET http://ghostrider.aixuexi.com/pop/order/NCTS/pay-order-detail?orderId=7500 HTTP/1.1" 200 None
+[2021-06-22 18:42:13] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-22 18:42:13] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://www.aixuexi.com/surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-22 18:42:13] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-22 18:42:13] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://www.aixuexi.com/surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-22 18:42:13] INFO [test_01_login: test_px.py, 43] ========测试日志信息=========
+[2021-06-22 18:42:13] INFO [log_case_info: log_info.py, 12] 测试用例：接口关联
+[2021-06-22 18:42:13] INFO [log_case_info: log_info.py, 13] url：http://www.aixuexi.com/surrogates/passport/user/v2/login
+[2021-06-22 18:42:13] INFO [log_case_info: log_info.py, 14] 请求参数：{"device": "dffb64a4b76134eae61aab58c541bd33", "loginType": 1, "password": "qa123456", "username": 15210060668, "validateCode": null, "loginSystem": "pc"}
+[2021-06-22 18:42:13] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-06-22 18:42:13] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-22 18:42:13] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "GET http://px.aixuexi.com/thewolverine/aiCourse/labelList HTTP/1.1" 200 None
+[2021-06-22 18:42:13] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-22 18:42:13] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "GET http://px.aixuexi.com/thewolverine/aiCourse/userInterestLabel HTTP/1.1" 200 None
+[2021-06-22 18:42:13] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-22 18:42:13] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "POST http://px.aixuexi.com/thewolverine/aiCourse/saveUserInterestLabel HTTP/1.1" 200 None
+[2021-06-22 18:42:13] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): 127.0.0.1:8899
+[2021-06-22 18:42:13] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "GET http://px.aixuexi.com/thewolverine/course/getPersonalCourseList HTTP/1.1" 200 None
+[2021-06-22 18:42:46] INFO [send_email: send_email.py, 47] 邮件发送完成！
+[2021-06-22 18:42:46] INFO [<module>: runall.py, 12] 测试结束

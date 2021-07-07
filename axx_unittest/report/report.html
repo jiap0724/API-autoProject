@@ -116,19 +116,19 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">爱学习接口测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> 贾鹏</p>
-<p class='attribute'><strong>开始时间 : </strong> 2021-06-22 18:42:10</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:02.889508</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 16，通过 9，错误 7，通过率= 56.25%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2021-07-07 11:06:13</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:02.658303</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 18，通过 16，错误 2，通过率= 88.89%</p>
 
 <p class='description'>ToC商城api测试</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 56.25% }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 88.89% }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 9 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 16 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 16 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 18 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -148,77 +148,30 @@ function html_escape(s) {
     <td>详细</td>
 </tr>
 
-<tr class='errorClass warning'>
+<tr class='passClass warning'>
     <td>test_demo6.axx_learn</td>
     <td class="text-center">3</td>
-    <td class="text-center">0</td>
-    <td class="text-center">0</td>
     <td class="text-center">3</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
     <td class="text-center"><a href="javascript:showClassDetail('c1',3)" class="detail" id='c1'>详细</a></td>
 </tr>
 
-<tr id='ft1_1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_login1_00001: test_login1_00001</div></td>
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login1_00001: test_login1_00001</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
-    <div id='div_ft1_1' class="collapse">  -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
-    <div id='div_ft1_1' class="collapse in">
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in">
     <pre>
     
-ft1_1: 初始化
+pt1_1: 初始化
 正确的case
+&lt;Response [200]&gt;
 tearDown
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 667, in urlopen
-    self._prepare_proxy(conn)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 932, in _prepare_proxy
-    conn.connect()
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connection.py", line 362, in connect
-    self.sock = ssl_wrap_socket(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 384, in ssl_wrap_socket
-    return context.wrap_socket(sock, server_hostname=server_hostname)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 500, in wrap_socket
-    return self.sslsocket_class._create(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1040, in _create
-    self.do_handshake()
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1309, in do_handshake
-    self._sslobj.do_handshake()
-ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
-    resp = conn.urlopen(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 726, in urlopen
-    retries = retries.increment(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/util/retry.py", line 439, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='admin.aixuexi.com', port=443): Max retries exceeded with url: /shooter/manage/passwordLogin (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)')))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/ddt.py", line 182, in wrapper
-    return func(self, *args, **kwargs)
-  File "/Users/jiapeng/Downloads/automationProject/axx_unittest/case/test_demo6.py", line 37, in test_login1
-    r=HttpRequest().http_post_data(self.host,None,data)
-  File "/Users/jiapeng/Downloads/automationProject/axx_unittest/requestmethod/HttpRequest.py", line 24, in http_post_data
-    return requests.post(url=url,headers=header,data=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/api.py", line 119, in post
-    return request('post', url, data=data, json=json, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/api.py", line 61, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 530, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 643, in send
-    r = adapter.send(request, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/adapters.py", line 514, in send
-    raise SSLError(e, request=request)
-requests.exceptions.SSLError: HTTPSConnectionPool(host='admin.aixuexi.com', port=443): Max retries exceeded with url: /shooter/manage/passwordLogin (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)')))
 
 
     </pre>
@@ -226,68 +179,21 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host='admin.aixuexi.com', port
     </td>
 </tr>
 
-<tr id='ft1_2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_login1_00002: test_login1_00002</div></td>
+<tr id='pt1_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login1_00002: test_login1_00002</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
-    <div id='div_ft1_2' class="collapse">  -->
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
-    <div id='div_ft1_2' class="collapse in">
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse in">
     <pre>
     
-ft1_2: 初始化
+pt1_2: 初始化
 用户名错误
+&lt;Response [200]&gt;
 tearDown
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 667, in urlopen
-    self._prepare_proxy(conn)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 932, in _prepare_proxy
-    conn.connect()
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connection.py", line 362, in connect
-    self.sock = ssl_wrap_socket(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 384, in ssl_wrap_socket
-    return context.wrap_socket(sock, server_hostname=server_hostname)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 500, in wrap_socket
-    return self.sslsocket_class._create(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1040, in _create
-    self.do_handshake()
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1309, in do_handshake
-    self._sslobj.do_handshake()
-ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
-    resp = conn.urlopen(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 726, in urlopen
-    retries = retries.increment(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/util/retry.py", line 439, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='admin.aixuexi.com', port=443): Max retries exceeded with url: /shooter/manage/passwordLogin (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)')))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/ddt.py", line 182, in wrapper
-    return func(self, *args, **kwargs)
-  File "/Users/jiapeng/Downloads/automationProject/axx_unittest/case/test_demo6.py", line 37, in test_login1
-    r=HttpRequest().http_post_data(self.host,None,data)
-  File "/Users/jiapeng/Downloads/automationProject/axx_unittest/requestmethod/HttpRequest.py", line 24, in http_post_data
-    return requests.post(url=url,headers=header,data=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/api.py", line 119, in post
-    return request('post', url, data=data, json=json, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/api.py", line 61, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 530, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 643, in send
-    r = adapter.send(request, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/adapters.py", line 514, in send
-    raise SSLError(e, request=request)
-requests.exceptions.SSLError: HTTPSConnectionPool(host='admin.aixuexi.com', port=443): Max retries exceeded with url: /shooter/manage/passwordLogin (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)')))
 
 
     </pre>
@@ -295,284 +201,21 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host='admin.aixuexi.com', port
     </td>
 </tr>
 
-<tr id='ft1_3' class='none'>
-    <td class='errorCase'><div class='testcase'>test_login1_00003: test_login1_00003</div></td>
+<tr id='pt1_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login1_00003: test_login1_00003</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_3'>错误</button>
-    <div id='div_ft1_3' class="collapse">  -->
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_3'>错误</button>
-    <div id='div_ft1_3' class="collapse in">
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse in">
     <pre>
     
-ft1_3: 初始化
+pt1_3: 初始化
 密码错误
+&lt;Response [200]&gt;
 tearDown
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 667, in urlopen
-    self._prepare_proxy(conn)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 932, in _prepare_proxy
-    conn.connect()
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connection.py", line 362, in connect
-    self.sock = ssl_wrap_socket(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 384, in ssl_wrap_socket
-    return context.wrap_socket(sock, server_hostname=server_hostname)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 500, in wrap_socket
-    return self.sslsocket_class._create(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1040, in _create
-    self.do_handshake()
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1309, in do_handshake
-    self._sslobj.do_handshake()
-ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
-    resp = conn.urlopen(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 726, in urlopen
-    retries = retries.increment(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/util/retry.py", line 439, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='admin.aixuexi.com', port=443): Max retries exceeded with url: /shooter/manage/passwordLogin (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)')))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/ddt.py", line 182, in wrapper
-    return func(self, *args, **kwargs)
-  File "/Users/jiapeng/Downloads/automationProject/axx_unittest/case/test_demo6.py", line 37, in test_login1
-    r=HttpRequest().http_post_data(self.host,None,data)
-  File "/Users/jiapeng/Downloads/automationProject/axx_unittest/requestmethod/HttpRequest.py", line 24, in http_post_data
-    return requests.post(url=url,headers=header,data=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/api.py", line 119, in post
-    return request('post', url, data=data, json=json, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/api.py", line 61, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 530, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 643, in send
-    r = adapter.send(request, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/adapters.py", line 514, in send
-    raise SSLError(e, request=request)
-requests.exceptions.SSLError: HTTPSConnectionPool(host='admin.aixuexi.com', port=443): Max retries exceeded with url: /shooter/manage/passwordLogin (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)')))
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr class='errorClass warning'>
-    <td>test_demo7.axx_learn</td>
-    <td class="text-center">3</td>
-    <td class="text-center">0</td>
-    <td class="text-center">0</td>
-    <td class="text-center">3</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c2',3)" class="detail" id='c2'>详细</a></td>
-</tr>
-
-<tr id='ft2_1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_login1_00001: test_login1_00001</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_1'>错误</button>
-    <div id='div_ft2_1' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_1'>错误</button>
-    <div id='div_ft2_1' class="collapse in">
-    <pre>
-    
-ft2_1: 初始化
-正确的case
-tearDown
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 667, in urlopen
-    self._prepare_proxy(conn)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 932, in _prepare_proxy
-    conn.connect()
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connection.py", line 362, in connect
-    self.sock = ssl_wrap_socket(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 384, in ssl_wrap_socket
-    return context.wrap_socket(sock, server_hostname=server_hostname)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 500, in wrap_socket
-    return self.sslsocket_class._create(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1040, in _create
-    self.do_handshake()
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1309, in do_handshake
-    self._sslobj.do_handshake()
-ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
-    resp = conn.urlopen(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 726, in urlopen
-    retries = retries.increment(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/util/retry.py", line 439, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='admin.aixuexi.com', port=443): Max retries exceeded with url: /shooter/manage/passwordLogin (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)')))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/ddt.py", line 182, in wrapper
-    return func(self, *args, **kwargs)
-  File "/Users/jiapeng/Downloads/automationProject/axx_unittest/case/test_demo7.py", line 32, in test_login1
-    r = HttpRequest().http_post_data(self.host,None,data)
-  File "/Users/jiapeng/Downloads/automationProject/axx_unittest/requestmethod/HttpRequest.py", line 24, in http_post_data
-    return requests.post(url=url,headers=header,data=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/api.py", line 119, in post
-    return request('post', url, data=data, json=json, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/api.py", line 61, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 530, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 643, in send
-    r = adapter.send(request, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/adapters.py", line 514, in send
-    raise SSLError(e, request=request)
-requests.exceptions.SSLError: HTTPSConnectionPool(host='admin.aixuexi.com', port=443): Max retries exceeded with url: /shooter/manage/passwordLogin (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)')))
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='ft2_2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_login1_00002: test_login1_00002</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft2_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_2'>错误</button>
-    <div id='div_ft2_2' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft2_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_2'>错误</button>
-    <div id='div_ft2_2' class="collapse in">
-    <pre>
-    
-ft2_2: 初始化
-用户名错误
-tearDown
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 667, in urlopen
-    self._prepare_proxy(conn)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 932, in _prepare_proxy
-    conn.connect()
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connection.py", line 362, in connect
-    self.sock = ssl_wrap_socket(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 384, in ssl_wrap_socket
-    return context.wrap_socket(sock, server_hostname=server_hostname)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 500, in wrap_socket
-    return self.sslsocket_class._create(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1040, in _create
-    self.do_handshake()
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1309, in do_handshake
-    self._sslobj.do_handshake()
-ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
-    resp = conn.urlopen(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 726, in urlopen
-    retries = retries.increment(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/util/retry.py", line 439, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='admin.aixuexi.com', port=443): Max retries exceeded with url: /shooter/manage/passwordLogin (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)')))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/ddt.py", line 182, in wrapper
-    return func(self, *args, **kwargs)
-  File "/Users/jiapeng/Downloads/automationProject/axx_unittest/case/test_demo7.py", line 32, in test_login1
-    r = HttpRequest().http_post_data(self.host,None,data)
-  File "/Users/jiapeng/Downloads/automationProject/axx_unittest/requestmethod/HttpRequest.py", line 24, in http_post_data
-    return requests.post(url=url,headers=header,data=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/api.py", line 119, in post
-    return request('post', url, data=data, json=json, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/api.py", line 61, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 530, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 643, in send
-    r = adapter.send(request, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/adapters.py", line 514, in send
-    raise SSLError(e, request=request)
-requests.exceptions.SSLError: HTTPSConnectionPool(host='admin.aixuexi.com', port=443): Max retries exceeded with url: /shooter/manage/passwordLogin (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)')))
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='ft2_3' class='none'>
-    <td class='errorCase'><div class='testcase'>test_login1_00003: test_login1_00003</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft2_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_3'>错误</button>
-    <div id='div_ft2_3' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft2_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_3'>错误</button>
-    <div id='div_ft2_3' class="collapse in">
-    <pre>
-    
-ft2_3: 初始化
-密码错误
-tearDown
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 667, in urlopen
-    self._prepare_proxy(conn)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 932, in _prepare_proxy
-    conn.connect()
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connection.py", line 362, in connect
-    self.sock = ssl_wrap_socket(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 384, in ssl_wrap_socket
-    return context.wrap_socket(sock, server_hostname=server_hostname)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 500, in wrap_socket
-    return self.sslsocket_class._create(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1040, in _create
-    self.do_handshake()
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1309, in do_handshake
-    self._sslobj.do_handshake()
-ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
-    resp = conn.urlopen(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 726, in urlopen
-    retries = retries.increment(
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/util/retry.py", line 439, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='admin.aixuexi.com', port=443): Max retries exceeded with url: /shooter/manage/passwordLogin (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)')))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/ddt.py", line 182, in wrapper
-    return func(self, *args, **kwargs)
-  File "/Users/jiapeng/Downloads/automationProject/axx_unittest/case/test_demo7.py", line 32, in test_login1
-    r = HttpRequest().http_post_data(self.host,None,data)
-  File "/Users/jiapeng/Downloads/automationProject/axx_unittest/requestmethod/HttpRequest.py", line 24, in http_post_data
-    return requests.post(url=url,headers=header,data=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/api.py", line 119, in post
-    return request('post', url, data=data, json=json, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/api.py", line 61, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 530, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 643, in send
-    r = adapter.send(request, **kwargs)
-  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/adapters.py", line 514, in send
-    raise SSLError(e, request=request)
-requests.exceptions.SSLError: HTTPSConnectionPool(host='admin.aixuexi.com', port=443): Max retries exceeded with url: /shooter/manage/passwordLogin (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1122)')))
 
 
     </pre>
@@ -581,11 +224,86 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host='admin.aixuexi.com', port
 </tr>
 
 <tr class='passClass warning'>
+    <td>test_demo7.axx_learn</td>
+    <td class="text-center">3</td>
+    <td class="text-center">3</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',3)" class="detail" id='c2'>详细</a></td>
+</tr>
+
+<tr id='pt2_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login1_00001: test_login1_00001</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse in">
+    <pre>
+    
+pt2_1: 初始化
+正确的case
+&lt;Response [200]&gt;
+tearDown
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login1_00002: test_login1_00002</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse in">
+    <pre>
+    
+pt2_2: 初始化
+用户名错误
+&lt;Response [200]&gt;
+tearDown
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login1_00003: test_login1_00003</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse in">
+    <pre>
+    
+pt2_3: 初始化
+密码错误
+&lt;Response [200]&gt;
+tearDown
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='errorClass warning'>
     <td>test_demo8.axx_learn</td>
     <td class="text-center">3</td>
-    <td class="text-center">3</td>
+    <td class="text-center">2</td>
     <td class="text-center">0</td>
-    <td class="text-center">0</td>
+    <td class="text-center">1</td>
     <td class="text-center"><a href="javascript:showClassDetail('c3',3)" class="detail" id='c3'>详细</a></td>
 </tr>
 
@@ -605,7 +323,7 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host='admin.aixuexi.com', port
     <div id='div_pt3_2' class="collapse in">
     <pre>
     
-pt3_2: [7500, 7499, 7480, 7479, 7472, 7470, 7469, 7468, 7467, 7466]
+pt3_2: False
 
 
     </pre>
@@ -613,60 +331,23 @@ pt3_2: [7500, 7499, 7480, 7479, 7472, 7470, 7469, 7468, 7467, 7466]
     </td>
 </tr>
 
-<tr id='pt3_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_03_order_detail</div></td>
+<tr id='ft3_3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_03_order_detail</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt3_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_3'>通过</button>
-    <div id='div_pt3_3' class="collapse">  -->
+    <button id='btn_ft3_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_3'>错误</button>
+    <div id='div_ft3_3' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt3_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_3'>通过</button>
-    <div id='div_pt3_3' class="collapse in">
+    <button id='btn_ft3_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_3'>错误</button>
+    <div id='div_ft3_3' class="collapse in">
     <pre>
     
-pt3_3: 7500
-{
-  "status": 1,
-  "errorCode": 0,
-  "errorMessage": "",
-  "body": [
-    {
-      "spuId": null,
-      "skuId": null,
-      "goodsName": "jp-代客小学英语-三-寒",
-      "fromType": null,
-      "lessonId": null,
-      "quota": null,
-      "areaPrice": null,
-      "subjectId": null,
-      "subjectName": null,
-      "institutionId": null,
-      "institutionName": null,
-      "campusId": null,
-      "campusName": "贾鹏专用校区",
-      "startDate": null,
-      "endDate": null,
-      "teachingTime": "11:00~12:00",
-      "lessonNum": 4,
-      "teacherId": null,
-      "teacherName": null,
-      "shelvesStatus": null,
-      "year": null,
-      "subjectProductId": 21,
-      "subjectProductName": "小学英语",
-      "period": null,
-      "gradeId": null,
-      "gradeName": "三年级",
-      "version": null,
-      "goodsPrice": 0.16,
-      "goodsNum": 1,
-      "orderDetailId": 7800,
-      "applyTag": false,
-      "realOrderDetailPrice": 0.16
-    }
-  ]
-}
-[{'spuId': None, 'skuId': None, 'goodsName': 'jp-代客小学英语-三-寒', 'fromType': None, 'lessonId': None, 'quota': None, 'areaPrice': None, 'subjectId': None, 'subjectName': None, 'institutionId': None, 'institutionName': None, 'campusId': None, 'campusName': '贾鹏专用校区', 'startDate': None, 'endDate': None, 'teachingTime': '11:00~12:00', 'lessonNum': 4, 'teacherId': None, 'teacherName': None, 'shelvesStatus': None, 'year': None, 'subjectProductId': 21, 'subjectProductName': '小学英语', 'period': None, 'gradeId': None, 'gradeName': '三年级', 'version': None, 'goodsPrice': 0.16, 'goodsNum': 1, 'orderDetailId': 7800, 'applyTag': False, 'realOrderDetailPrice': 0.16}]
+ft3_3: Traceback (most recent call last):
+  File "/Users/jiapeng/Downloads/automationProject/axx_unittest/case/test_demo8.py", line 65, in test_03_order_detail
+    orderId=random.choice(self.orderId)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+TypeError: object of type 'bool' has no len()
 
 
     </pre>
@@ -775,7 +456,63 @@ pt6_4: ['保存成功']
     <div id='div_pt6_5' class="collapse in">
     <pre>
     
-pt6_5: [5810, 4850, 4568, 4178, 4331, 3697, 3678, 3681, 3680, 4330]
+pt6_5: [5630, 5672, 5629, 5628, 5625, 5623, 5619, 5568, 5562, 5561]
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>axx_unittest.GetCookie.GetHeader</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c7',1)" class="detail" id='c7'>详细</a></td>
+</tr>
+
+<tr id='pt7_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_Getheaders</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt7_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt7_1'>通过</button>
+    <div id='div_pt7_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt7_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt7_1'>通过</button>
+    <div id='div_pt7_1' class="collapse in">
+    <pre>
+    
+pt7_1: {'ptpc': 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0MDQwOTg5MjgwOTE1NjYwODMiLCJidXNpbmVzc1BsYXRmb3JtIjoiYWl4dWV4aSIsInYiOiJkZmZiNjRhNGI3NjEzNGVhZTYxYWFiNThjNTQxYmQzMyIsImlwIjoiMTkyLjE2OC4wLjIyNSIsImlzcyI6InBhc3Nwb3J0U2VydmljZSIsImp3dF9yZWZfdG9rZW5fZXhwaXJlIjoxNjI1NzEzNTc1OTA4LCJleHAiOjE2MjU3MTM1NzUsImlhdCI6MTYyNTYyNzE3NSwibG9naW5TeXN0ZW0iOiJwYyIsImp0aSI6ImJkMGIxMTk4Y2RmYTQzMjY5ZThhZmQ4MTA4MDcyMTc2Iiwic0lkIjoiMjkwMWMzN2U3YTEwNGU2OGJiNjFmNTM3NWYyY2UzMjIifQ.n9GmGoXjiRgSfAi3RWUlUQRiewH2FOJIvTOajAsDZds', 'userid': '2720372'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_px_demo.axx_learn</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c8',1)" class="detail" id='c8'>详细</a></td>
+</tr>
+
+<tr id='pt8_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_01_labelList_00001: test_01_labelList_00001</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt8_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt8_1'>通过</button>
+    <div id='div_pt8_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt8_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt8_1'>通过</button>
+    <div id='div_pt8_1' class="collapse in">
+    <pre>
+    
+pt8_1: {'ptpc': 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0MDQwOTg5MjgwOTE1NjYwODMiLCJidXNpbmVzc1BsYXRmb3JtIjoiYWl4dWV4aSIsInYiOiJkZmZiNjRhNGI3NjEzNGVhZTYxYWFiNThjNTQxYmQzMyIsImlwIjoiMTkyLjE2OC4wLjIyNSIsImlzcyI6InBhc3Nwb3J0U2VydmljZSIsImp3dF9yZWZfdG9rZW5fZXhwaXJlIjoxNjI1NzEzNTc1OTcxLCJleHAiOjE2MjU3MTM1NzUsImlhdCI6MTYyNTYyNzE3NSwibG9naW5TeXN0ZW0iOiJwYyIsImp0aSI6IjQ2Mjk5ZDUwMzIyYTRiYTFiNDBmNzFiYzE0OTYxZGNiIiwic0lkIjoiNzdlZDgwYmQ2YzM1NDVhN2I5YzA0NWY5MDA0NWEyMzYifQ.En124IcXTjBile-JMBqm0wJ85TN47uvIm3YD3L6y3PQ', 'userid': '2720372'}
 
 
     </pre>
@@ -785,11 +522,11 @@ pt6_5: [5810, 4850, 4568, 4178, 4331, 3697, 3678, 3681, 3680, 4330]
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
+    <td>18</td>
     <td>16</td>
-    <td>9</td>
     <td>0</td>
-    <td>7</td>
-    <td>通过率：56.25%</td>
+    <td>2</td>
+    <td>通过率：88.89%</td>
 </tr>
 </table>
 

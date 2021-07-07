@@ -1,0 +1,10 @@
+-
+    case: 登陆
+    data:
+        device: dffb64a4b76134eae61aab58c541bd33
+        loginType: 1
+        password: qa123456
+        username: 15210060668
+        validateCode:
+        loginSystem: pc
+

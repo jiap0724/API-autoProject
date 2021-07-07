@@ -1278,3 +1278,144 @@
 [2021-06-22 18:42:13] DEBUG [_make_request: connectionpool.py, 433] http://127.0.0.1:8899 "GET http://px.aixuexi.com/thewolverine/course/getPersonalCourseList HTTP/1.1" 200 None
 [2021-06-22 18:42:46] INFO [send_email: send_email.py, 47] 邮件发送完成！
 [2021-06-22 18:42:46] INFO [<module>: runall.py, 12] 测试结束
+[2021-06-25 14:03:27] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-06-25 14:03:27] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-25 14:03:27] INFO [test_01_login: test_px.py, 43] ========测试日志信息=========
+[2021-06-25 14:03:27] INFO [log_case_info: log_info.py, 12] 测试用例：接口关联
+[2021-06-25 14:03:27] INFO [log_case_info: log_info.py, 13] url：http://www.aixuexi.com/surrogates/passport/user/v2/login
+[2021-06-25 14:03:27] INFO [log_case_info: log_info.py, 14] 请求参数：{"device": "dffb64a4b76134eae61aab58c541bd33", "loginType": 1, "password": "qa123456", "username": 15210060668, "validateCode": null, "loginSystem": "pc"}
+[2021-06-25 14:03:27] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-06-25 14:04:13] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-06-25 14:04:13] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-25 14:04:13] INFO [test_01_login: test_px.py, 43] ========测试日志信息=========
+[2021-06-25 14:04:13] INFO [log_case_info: log_info.py, 12] 测试用例：接口关联
+[2021-06-25 14:04:13] INFO [log_case_info: log_info.py, 13] url：http://www.aixuexi.com/surrogates/passport/user/v2/login
+[2021-06-25 14:04:13] INFO [log_case_info: log_info.py, 14] 请求参数：{"device": "dffb64a4b76134eae61aab58c541bd33", "loginType": 1, "password": "qa123456", "username": 15210060668, "validateCode": null, "loginSystem": "pc"}
+[2021-06-25 14:04:13] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-06-25 14:36:39] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-06-25 14:36:39] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-25 14:37:09] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-06-25 14:37:09] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-25 14:38:36] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-06-25 14:38:36] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-25 14:38:36] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-06-25 14:38:36] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-25 14:41:44] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-06-25 14:41:44] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-25 14:41:44] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-06-25 14:41:44] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-25 19:06:17] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-06-25 19:06:18] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-25 19:06:18] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-06-25 19:06:18] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-25 19:06:36] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-06-25 19:06:36] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-25 19:06:36] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-06-25 19:06:37] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-28 10:14:12] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-06-28 10:14:13] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-28 10:14:13] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-06-28 10:14:13] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-06-28 15:11:24] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-06-28 15:11:24] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 400 1127
+[2021-06-28 19:15:26] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-06-28 19:15:26] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-07-07 10:46:11] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-07-07 10:46:11] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-07-07 10:46:29] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-07-07 10:46:30] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-07-07 10:48:50] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-07-07 10:48:50] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-07-07 10:51:26] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-07-07 10:51:26] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-07-07 10:51:54] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-07-07 10:51:54] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-07-07 10:58:25] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-07-07 10:58:26] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-07-07 10:59:12] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-07-07 10:59:13] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-07-07 11:00:18] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-07-07 11:00:18] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-07-07 11:04:36] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-07-07 11:04:36] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-07-07 11:04:36] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-07-07 11:04:36] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-07-07 11:04:36] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): px.aixuexi.com:80
+[2021-07-07 11:04:36] DEBUG [_make_request: connectionpool.py, 433] http://px.aixuexi.com:80 "GET /thewolverine/aiCourse/labelList HTTP/1.1" 200 None
+[2021-07-07 11:06:13] INFO [<module>: runall.py, 6] 测试开始
+[2021-07-07 11:06:13] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-07-07 11:06:13] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-07-07 11:06:13] INFO [test_login1: test_demo6.py, 39] ========测试日志信息=========
+[2021-07-07 11:06:13] INFO [log_case_info: log_info.py, 12] 测试用例：正确的case
+[2021-07-07 11:06:13] INFO [log_case_info: log_info.py, 13] url：https://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-07-07 11:06:13] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng0@aixuexi.com", "password": "Jiapeng0724"}
+[2021-07-07 11:06:13] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-07-07 11:06:13] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-07-07 11:06:13] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-07-07 11:06:13] INFO [test_login1: test_demo6.py, 39] ========测试日志信息=========
+[2021-07-07 11:06:13] INFO [log_case_info: log_info.py, 12] 测试用例：用户名错误
+[2021-07-07 11:06:13] INFO [log_case_info: log_info.py, 13] url：https://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-07-07 11:06:13] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng", "password": "Jiapeng0724"}
+[2021-07-07 11:06:13] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-07-07 11:06:13] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-07-07 11:06:14] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-07-07 11:06:14] INFO [test_login1: test_demo6.py, 39] ========测试日志信息=========
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 12] 测试用例：密码错误
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 13] url：https://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng0@aixuexi.com", "password": "jiapeng"}
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-07-07 11:06:14] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-07-07 11:06:14] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-07-07 11:06:14] INFO [test_login1: test_demo7.py, 35] ========测试日志信息=========
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 12] 测试用例：正确的case
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 13] url：https://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng0@aixuexi.com", "password": "Jiapeng0724"}
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-07-07 11:06:14] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-07-07 11:06:14] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-07-07 11:06:14] INFO [test_login1: test_demo7.py, 35] ========测试日志信息=========
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 12] 测试用例：用户名错误
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 13] url：https://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng", "password": "Jiapeng0724"}
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-07-07 11:06:14] DEBUG [_new_conn: connectionpool.py, 939] Starting new HTTPS connection (1): admin.aixuexi.com:443
+[2021-07-07 11:06:14] DEBUG [_make_request: connectionpool.py, 433] https://admin.aixuexi.com:443 "POST /shooter/manage/passwordLogin HTTP/1.1" 200 None
+[2021-07-07 11:06:14] INFO [test_login1: test_demo7.py, 35] ========测试日志信息=========
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 12] 测试用例：密码错误
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 13] url：https://admin.aixuexi.com/shooter/manage/passwordLogin
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 14] 请求参数：{"username": "jiapeng0@aixuexi.com", "password": "jiapeng"}
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-07-07 11:06:14] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-07-07 11:06:14] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-07-07 11:06:14] INFO [test_01_login: test_demo8.py, 40] ========测试日志信息=========
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 12] 测试用例：接口关联
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 13] url：http://www.aixuexi.com/surrogates/passport/user/v2/login
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 14] 请求参数：{"device": "dffb64a4b76134eae61aab58c541bd33", "loginType": 1, "password": "qa123456", "username": 15210060668, "validateCode": null, "loginSystem": "pc"}
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-07-07 11:06:14] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): ghostrider.aixuexi.com:80
+[2021-07-07 11:06:14] DEBUG [_make_request: connectionpool.py, 433] http://ghostrider.aixuexi.com:80 "GET /pop/order/pay-list?studentName=&orderNo=&phone=&goodsName=&orderStatus=&businessType=1&orderSource=&orderAccount=&pageNum=1&pageSize=10&startTime=2021-05-03%2000:00:00&endTime=2021-06-02%2023:59:59 HTTP/1.1" 200 None
+[2021-07-07 11:06:14] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-07-07 11:06:14] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-07-07 11:06:14] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-07-07 11:06:14] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-07-07 11:06:14] INFO [test_01_login: test_px.py, 43] ========测试日志信息=========
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 12] 测试用例：接口关联
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 13] url：http://www.aixuexi.com/surrogates/passport/user/v2/login
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 14] 请求参数：{"device": "dffb64a4b76134eae61aab58c541bd33", "loginType": 1, "password": "qa123456", "username": 15210060668, "validateCode": null, "loginSystem": "pc"}
+[2021-07-07 11:06:14] INFO [log_case_info: log_info.py, 16] 实际结果：<Response [200]>
+[2021-07-07 11:06:14] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): px.aixuexi.com:80
+[2021-07-07 11:06:15] DEBUG [_make_request: connectionpool.py, 433] http://px.aixuexi.com:80 "GET /thewolverine/aiCourse/labelList HTTP/1.1" 200 None
+[2021-07-07 11:06:15] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): px.aixuexi.com:80
+[2021-07-07 11:06:15] DEBUG [_make_request: connectionpool.py, 433] http://px.aixuexi.com:80 "GET /thewolverine/aiCourse/userInterestLabel HTTP/1.1" 200 None
+[2021-07-07 11:06:15] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): px.aixuexi.com:80
+[2021-07-07 11:06:15] DEBUG [_make_request: connectionpool.py, 433] http://px.aixuexi.com:80 "POST /thewolverine/aiCourse/saveUserInterestLabel HTTP/1.1" 200 None
+[2021-07-07 11:06:15] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): px.aixuexi.com:80
+[2021-07-07 11:06:15] DEBUG [_make_request: connectionpool.py, 433] http://px.aixuexi.com:80 "GET /thewolverine/course/getPersonalCourseList HTTP/1.1" 200 None
+[2021-07-07 11:06:15] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-07-07 11:06:15] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-07-07 11:06:15] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): www.aixuexi.com:80
+[2021-07-07 11:06:15] DEBUG [_make_request: connectionpool.py, 433] http://www.aixuexi.com:80 "POST /surrogates/passport/user/v2/login HTTP/1.1" 200 None
+[2021-07-07 11:06:16] DEBUG [_new_conn: connectionpool.py, 226] Starting new HTTP connection (1): px.aixuexi.com:80
+[2021-07-07 11:06:16] DEBUG [_make_request: connectionpool.py, 433] http://px.aixuexi.com:80 "GET /thewolverine/aiCourse/labelList HTTP/1.1" 200 None
+[2021-07-07 11:06:48] INFO [send_email: send_email.py, 47] 邮件发送完成！
+[2021-07-07 11:06:48] INFO [<module>: runall.py, 12] 测试结束

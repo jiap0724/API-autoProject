@@ -2,16 +2,23 @@
 # @Time : 2021/6/1 17:30
 # @Author : jiapeng
 # @File : test_demo8.py
+<<<<<<< HEAD:axx_unittest/case/test_demo8.py
+=======
+import logging
+>>>>>>> dev_branch1:axx_unittest/case/test_demo8.py
 import unittest
 
 import jsonpath
 import requests
 import json
 import random
+import ddt
+from ddt import file_data
 
+from axx_unittest.Logs.log_info import log_case_info
 from axx_unittest.requestmethod.HttpRequest import HttpRequest
-
-
+from axx_unittest.config import getHost
+@ddt.ddt()
 class axx_learn(unittest.TestCase):
 
     @classmethod
@@ -19,33 +26,31 @@ class axx_learn(unittest.TestCase):
         cls.ptpc=None
         cls.ptpcUserId=None
         cls.orderId=None
-
-    def test_01_login(self):
-        url='http://www.aixuexi.com/surrogates/passport/user/v2/login'
-        data={
-            "device": "6619a89f4edf3cf778b5bf335a02458f",
-            "loginType": 1,
-            "password": "qa123456",
-            "username": "15210060668",
-            "validateCode": "",
-            "loginSystem": "pc"
-        }
-
-        # print(json.dumps(r.json(),indent=2,ensure_ascii=False))
+    #     优化后
+        cls.host=getHost.GetHost('/Users/jiapeng/Downloads/automationProject/axx_unittest/config/host.ini','aixuexi','host')
+        cls.ghost = getHost.GetHost('/Users/jiapeng/Downloads/automationProject/axx_unittest/config/host.ini', 'ghostrider', 'host')
+    # 数据驱动 读取yaml
+    @file_data(r'/Users/jiapeng/Downloads/automationProject/axx_unittest/TestData/testdata2.yaml')
+    def test_01_login(self,**testdata):
+        url=self.host+testdata['path']
+        case=testdata['case']
+        data=testdata['data']
         r=HttpRequest().http_post(url,None,data)
         cookies = requests.utils.dict_from_cookiejar(r.cookies)
         axx_learn.ptpc=cookies['ptpc']
         axx_learn.ptpcUserId=cookies['ptpcUserId']
         self.assertEqual(r.json()['body']['userId'],2720372,msg='登陆失败')
+        logging.info('========测试日志信息=========')
+        log_case_info(case, url, data, r)
 
 
 #     订单列表
-    def test_02_pay_list(self):
-        header={
-            'userid':self.ptpcUserId,
-            'ptpc':self.ptpc
-        }
-        url='http://ghostrider.aixuexi.com/pop/order/pay-list?studentName=&orderNo=&phone=&goodsName=&orderStatus=&businessType=1&orderSource=&orderAccount=&pageNum=1&pageSize=10&startTime=2021-05-03%2000:00:00&endTime=2021-06-02%2023:59:59'
+    @file_data(r'/Users/jiapeng/Downloads/automationProject/axx_unittest/TestData/testdata2.yaml')
+    def test_02_pay_list(self,**testdata):
+        header=testdata['headers']
+        header['ptpc']=self.ptpc
+        header['userid']=self.ptpcUserId
+        url=self.ghost+testdata['orderlistpath']
         r=HttpRequest().http_get(url,header,None)
         # print(json.dumps(r.json(),indent=2,ensure_ascii=False))
         # key = input('请输入要获取的key:')
@@ -62,7 +67,7 @@ class axx_learn(unittest.TestCase):
         }
         orderId=random.choice(self.orderId)
         print(orderId)
-        url='http://ghostrider.aixuexi.com/pop/order/NCTS/pay-order-detail?orderId='+str(orderId)
+        url=self.ghost+'/pop/order/NCTS/pay-order-detail?orderId='+str(orderId)
         r=HttpRequest().http_get(url,header,None)
         # print(r.json())
         print(json.dumps(r.json(), indent=2, ensure_ascii=False))
@@ -72,5 +77,6 @@ class axx_learn(unittest.TestCase):
         self.assertIsNotNone(body,msg='body为空')
 
 
+
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)

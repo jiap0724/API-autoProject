@@ -1,0 +1,6 @@
+-
+    CourseListpath: /thewolverine/course/getPersonalCourseList
+    labelListpath: /thewolverine/aiCourse/labelList
+    userInterestLabelpath: /thewolverine/aiCourse/userInterestLabel
+    saveUserInterestLabelpath: /thewolverine/aiCourse/saveUserInterestLabel
+

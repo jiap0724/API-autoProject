@@ -9,9 +9,12 @@ import requests
 
 from axx_unittest.Logs.log_info import log_case_info
 from axx_unittest.Logs.demolog import *
-from axx_unittest.requestmethod.HttpRequest import HttpRequest
+
 import ddt #数据驱动
 from ddt import unpack,data,file_data
+
+from axx_unittest.requestmethod.HttpRequest import HttpRequest
+
 
 @ddt.ddt()
 class axx_learn(unittest.TestCase):
@@ -26,9 +29,9 @@ class axx_learn(unittest.TestCase):
     @file_data(r'/Users/jiapeng/Downloads/automationProject/axx_unittest/TestData/testdata1.yaml')
     def test_login1(self,data,case,msg):
         print(case)
-        r = HttpRequest().http_request(self.host,data,'post',None,None)
+        r = HttpRequest().http_post_data(self.host,None,data)
         print(r)
-        self.assertEqual(msg,r['errorMessage'])
+        self.assertEqual(msg,r.json()['errorMessage'])
         logging.info('========测试日志信息=========')
         log_case_info(case, self.host, data, r)
 

@@ -34,8 +34,7 @@ class axx_learn(unittest.TestCase):
             'password': testdata.get('password')
         }
 
-        r = HttpRequest().http_request(self.host, data, 'post', None, None)
-
+        r=HttpRequest().http_post_data(self.host,None,data)
         print(r)
         logging.info('========测试日志信息=========')
         log_case_info(casename, self.host, data, r)

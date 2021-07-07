@@ -1,0 +1,44 @@
+-
+    ctsoderspath: /ror/business/ctsoders
+    data:
+        appKey:
+        timestamp:
+        sign:
+        buCode:
+        sysCode:
+        orderNo: 162277634000001
+        paySeq:
+        channelTranSeq:
+        payType:
+        gkoMerNo:
+        gkoSubmerNo:
+        gkoSubmerKey:
+        gkoPaySeq:
+        insNo: 1295111
+        insName:
+        goodsInfo:
+        orderCreateTime: 1622778164000
+        orderPayTime:
+        orderDetailList:
+            orderDetailNo:
+            orderAmount:
+            goodsId: 19917
+            goodsType:
+            goodsName:
+            cfmRuleId:
+            cfmCompanyId:
+            incomeId:
+            courseId:
+            courseStartTime:
+            courseEndTime:
+            lessonTotal:
+            purchaseLessonTotal:
+            hasMaterial:
+
+
+
+
+
+
+
+

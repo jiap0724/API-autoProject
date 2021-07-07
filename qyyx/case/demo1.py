@@ -38,6 +38,7 @@ class Login(unittest.TestCase):
 
 
     #校区列表
+    @unittest.skip
     def test_xiaoqu(self):
         url = "http://oms.admin.aixuexi.com/marketingcenter/marketingactivity/institutions?pageNum=1&pageSize=10"
         r = requests.get(url, cookies=cookies,verify=False)
